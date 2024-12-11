@@ -1,0 +1,13 @@
+Kiểm tra đăng nhập và Token trong Postman:
+Post: http://localhost:3000/auth/login
+Body (JSON):
+{
+  "username": "admin",
+  "password": "123456"
+}
+
+Xác thực API:
+Get: http://localhost:3000/hello
+Headers:
+- Key: Authorization
+- Value: Bearer <token ở kết quả phần đăng nhập>
